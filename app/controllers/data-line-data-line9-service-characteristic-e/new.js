@@ -1,0 +1,4 @@
+import DataLineDataLine9service_characteristicEController from '../data-line-data-line9-service-characteristic-e';
+
+var DataLineDataLine9service_characteristicENewController = DataLineDataLine9service_characteristicEController;
+export default DataLineDataLine9service_characteristicENewController;

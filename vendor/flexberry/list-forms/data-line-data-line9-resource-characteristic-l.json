@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-data-line9-resource-characteristic-e",
+  "editForm": "data-line-data-line9-resource-characteristic-e",
+  "external": false,
+  "caption": "Resource_characteristic",
+  "name": "DataLineDataLine9resource_characteristicL",
+  "className": "resource_characteristicL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-resource-characteristic",
+      "modelProjection": "resource_characteristicL"
+    }
+  ]
+}

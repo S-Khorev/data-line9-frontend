@@ -1,0 +1,4 @@
+import DataLineDataLine9resource_characteristicEController from '../data-line-data-line9-resource-characteristic-e';
+
+var DataLineDataLine9resource_characteristicENewController = DataLineDataLine9resource_characteristicEController;
+export default DataLineDataLine9resource_characteristicENewController;

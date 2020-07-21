@@ -1,0 +1,181 @@
+<h3 class="ui header">{{t "forms.data-line-data-line9-catalog-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.code
+      class=(if (v-get validationObject "code" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-catalog-e.code-caption")
+      data-test-data-line-data-line9-catalog-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "code" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.svc
+      class=(if (v-get validationObject "svc" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-catalog-e.svc-caption")
+      data-test-data-line-data-line9-catalog-e----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "svc" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.svcType
+      class=(if (v-get validationObject "svcType" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-catalog-e.svcType-caption")
+      data-test-data-line-data-line9-catalog-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "svcType" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.dataVersion
+      class=(if (v-get validationObject "dataVersion" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-catalog-e.dataVersion-caption")
+      data-test-data-line-data-line9-catalog-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dataVersion" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-catalog-e.dtSync-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dtSync
+      class=(if (v-get validationObject "dtSync" "isInvalid") "error")
+      data-test-data-line-data-line9-catalog-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dtSync" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.descr
+      class=(if (v-get validationObject "descr" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-catalog-e.descr-caption")
+      data-test-data-line-data-line9-catalog-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "descr" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.vat
+      class=(if (v-get validationObject "vat" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-catalog-e.vat-caption")
+      data-test-data-line-data-line9-catalog-e----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "vat" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-catalog-e.isActual-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.isActual
+      data-test-data-line-data-line9-catalog-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "isActual" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-catalog-e.dtCreation-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dtCreation
+      class=(if (v-get validationObject "dtCreation" "isInvalid") "error")
+      data-test-data-line-data-line9-catalog-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dtCreation" "messages")}}
+  </div>
+
+  <div class="field" data-test-data-line-data-line9-catalog-e----------="true">
+    <label>{{t "forms.data-line-data-line9-catalog-e.parentKey-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "guid")
+      value=model.parentKey
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parentKey" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.measure
+      class=(if (v-get validationObject "measure" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-catalog-e.measure-caption")
+      data-test-data-line-data-line9-catalog-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "measure" "messages")}}
+  </div>
+  <div class="field" data-test-data-line-data-line9-catalog-e-----------="true">
+    <label>{{t "forms.data-line-data-line9-catalog-e.measureKey-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "guid")
+      value=model.measureKey
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "measureKey" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.status
+      class=(if (v-get validationObject "status" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-catalog-e.status-caption")
+      data-test-data-line-data-line9-catalog-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "status" "messages")}}
+  </div>
+  <div class="field" data-test-data-line-data-line9-catalog-e-----------="true">
+    <label>{{t "forms.data-line-data-line9-catalog-e.formulaKey-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "guid")
+      value=model.formulaKey
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "formulaKey" "messages")}}
+  </div>
+  <div class="field" data-test-data-line-data-line9-catalog-e----------------------="true">
+    <label>{{t "forms.data-line-data-line9-catalog-e.billingObjectTypeGuid-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "guid")
+      value=model.billingObjectTypeGuid
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "billingObjectTypeGuid" "messages")}}
+  </div>
+</form>

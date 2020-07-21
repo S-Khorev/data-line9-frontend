@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-data-line9-customer-acl-e",
+  "editForm": "data-line-data-line9-customer-acl-e",
+  "external": false,
+  "caption": "Customer_acl",
+  "name": "DataLineDataLine9customer_aclL",
+  "className": "customer_aclL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-customer-acl",
+      "modelProjection": "customer_aclL"
+    }
+  ]
+}

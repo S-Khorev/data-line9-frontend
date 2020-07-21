@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "CustomerId",
+      "projection": "customerL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Contragent",
+  "name": "DataLineDataLine9contragentE",
+  "className": "contragentE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-contragent",
+      "modelProjection": "contragentE"
+    }
+  ]
+}

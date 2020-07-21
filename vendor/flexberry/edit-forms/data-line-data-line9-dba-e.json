@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "prev_version",
+      "projection": "dbaL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Dba",
+  "name": "DataLineDataLine9dbaE",
+  "className": "dbaE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-dba",
+      "modelProjection": "dbaE"
+    }
+  ]
+}

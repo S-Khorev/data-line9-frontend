@@ -1,0 +1,20 @@
+export default {
+  caption: 'Service',
+  'name-caption': 'Name',
+  'description-caption': 'Description',
+  'dtCreated-caption': 'Dt_created',
+  'dtStarted-caption': 'Dt_started',
+  'dtEnded-caption': 'Dt_ended',
+  'contragentId.name-caption': '',
+  'cfs_id.name-caption': 'Name',
+  'service_spec_id.enum-caption': 'Enum',
+  'state.description-caption': 'Description',
+  'parent_id.name-caption': 'Name',
+  'customerId.name-caption': '',
+  'contragentId-caption': 'Contragent_id',
+  'cfs_id-caption': 'Cfs_id',
+  'service_spec_id-caption': 'Service_spec_id',
+  'state-caption': 'State',
+  'parent_id-caption': 'Parent_id',
+  'customerId-caption': 'Customer_id'
+};

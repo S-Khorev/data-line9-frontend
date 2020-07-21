@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "CustomerId",
+      "projection": "customerL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Resource_shared",
+  "name": "DataLineDataLine9resource_sharedE",
+  "className": "resource_sharedE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-resource-shared",
+      "modelProjection": "resource_sharedE"
+    }
+  ]
+}

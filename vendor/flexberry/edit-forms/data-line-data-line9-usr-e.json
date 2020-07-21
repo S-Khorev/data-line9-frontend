@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Usr",
+  "name": "DataLineDataLine9usrE",
+  "className": "usrE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-usr",
+      "modelProjection": "usrE"
+    }
+  ]
+}

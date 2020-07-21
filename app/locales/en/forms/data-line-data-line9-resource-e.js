@@ -1,0 +1,20 @@
+export default {
+  caption: 'DataLineDataLine9resourceE',
+  'name-caption': 'name',
+  'description-caption': 'description',
+  'externalId-caption': 'externalId',
+  'cfs_id.name-caption': 'cfs_id.name',
+  'parent_service_id.name-caption': 'parent_service_id.name',
+  'resource_shared_id.externalId-caption': 'resource_shared_id.externalId',
+  'resource_spec_id.enum-caption': 'resource_spec_id.enum',
+  'customerId.name-caption': 'customerId.name',
+  'contragentId.name-caption': 'contragentId.name',
+  'parent_id.name-caption': 'parent_id.name',
+  'cfs_id-caption': 'cfs_id',
+  'parent_service_id-caption': 'parent_service_id',
+  'resource_shared_id-caption': 'resource_shared_id',
+  'resource_spec_id-caption': 'resource_spec_id',
+  'customerId-caption': 'customerId',
+  'contragentId-caption': 'contragentId',
+  'parent_id-caption': 'parent_id'
+};

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Order_state",
+  "name": "DataLineDataLine9order_stateE",
+  "className": "order_stateE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-order-state",
+      "modelProjection": "order_stateE"
+    }
+  ]
+}

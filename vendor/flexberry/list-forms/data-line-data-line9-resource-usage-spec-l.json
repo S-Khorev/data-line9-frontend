@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-data-line9-resource-usage-spec-e",
+  "editForm": "data-line-data-line9-resource-usage-spec-e",
+  "external": false,
+  "caption": "Resource_usage_spec",
+  "name": "DataLineDataLine9resource_usage_specL",
+  "className": "resource_usage_specL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-resource-usage-spec",
+      "modelProjection": "resource_usage_specL"
+    }
+  ]
+}

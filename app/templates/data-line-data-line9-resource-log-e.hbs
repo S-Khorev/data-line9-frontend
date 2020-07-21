@@ -1,0 +1,165 @@
+<h3 class="ui header">{{t "forms.data-line-data-line9-resource-log-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.resourceId
+      class=(if (v-get validationObject "resourceId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.resourceId-caption")
+      data-test-data-line-data-line9-resource-log-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resourceId" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.parentId
+      class=(if (v-get validationObject "parentId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.parentId-caption")
+      data-test-data-line-data-line9-resource-log-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parentId" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.cfsId
+      class=(if (v-get validationObject "cfsId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.cfsId-caption")
+      data-test-data-line-data-line9-resource-log-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "cfsId" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.parentServiceId
+      class=(if (v-get validationObject "parentServiceId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.parentServiceId-caption")
+      data-test-data-line-data-line9-resource-log-e----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parentServiceId" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.resourceSharedId
+      class=(if (v-get validationObject "resourceSharedId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.resourceSharedId-caption")
+      data-test-data-line-data-line9-resource-log-e-----------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resourceSharedId" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.contragentId
+      class=(if (v-get validationObject "contragentId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.contragentId-caption")
+      data-test-data-line-data-line9-resource-log-e-------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "contragentId" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.customerId
+      class=(if (v-get validationObject "customerId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.customerId-caption")
+      data-test-data-line-data-line9-resource-log-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "customerId" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.resourceSpecId
+      class=(if (v-get validationObject "resourceSpecId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.resourceSpecId-caption")
+      data-test-data-line-data-line9-resource-log-e---------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "resourceSpecId" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.name-caption")
+      data-test-data-line-data-line9-resource-log-e-----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.description
+      class=(if (v-get validationObject "description" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.description-caption")
+      data-test-data-line-data-line9-resource-log-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "description" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.externalId
+      class=(if (v-get validationObject "externalId" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-resource-log-e.externalId-caption")
+      data-test-data-line-data-line9-resource-log-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "externalId" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-resource-log-e.startTime-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.startTime
+      class=(if (v-get validationObject "startTime" "isInvalid") "error")
+      data-test-data-line-data-line9-resource-log-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "startTime" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-resource-log-e.endTime-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.endTime
+      class=(if (v-get validationObject "endTime" "isInvalid") "error")
+      data-test-data-line-data-line9-resource-log-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "endTime" "messages")}}
+  </div>
+
+</form>

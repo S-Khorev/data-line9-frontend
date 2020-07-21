@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-data-line9-role-e",
+  "editForm": "data-line-data-line9-role-e",
+  "external": false,
+  "caption": "Role",
+  "name": "DataLineDataLine9roleL",
+  "className": "roleL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-role",
+      "modelProjection": "roleL"
+    }
+  ]
+}

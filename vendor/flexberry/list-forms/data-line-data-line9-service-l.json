@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "data-line-data-line9-service-e",
+  "editForm": "data-line-data-line9-service-e",
+  "external": false,
+  "caption": "Service",
+  "name": "DataLineDataLine9serviceL",
+  "className": "serviceL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-service",
+      "modelProjection": "serviceL"
+    }
+  ]
+}

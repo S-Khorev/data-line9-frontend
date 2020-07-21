@@ -1,0 +1,21 @@
+export default {
+  caption: 'Resource_spec',
+  'enum-caption': 'Enum',
+  'type-caption': 'Type',
+  'existent-caption': 'Existent',
+  'shared-caption': 'Shared',
+  'version-caption': 'Version',
+  'name-caption': 'Name',
+  'description-caption': 'Description',
+  'category-caption': 'Category',
+  'dtCreated-caption': 'Dt_created',
+  'dtModified-caption': 'Dt_modified',
+  'parent_id.enum-caption': 'Enum',
+  'parent_service_spec_id.enum-caption': 'Enum',
+  'cardinality.description-caption': 'Description',
+  'resource_common_id.externalId-caption': 'External_id',
+  'parent_id-caption': 'Parent_id',
+  'parent_service_spec_id-caption': 'Parent_service_spec_id',
+  'cardinality-caption': 'Cardinality',
+  'resource_common_id-caption': 'Resource_common_id'
+};

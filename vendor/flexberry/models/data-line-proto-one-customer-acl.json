@@ -1,0 +1,218 @@
+﻿{
+  "name": "DataLineProtoOneCustomerAcl",
+  "modelName": "data-line-proto-one-customer-acl",
+  "className": "customer_acl",
+  "nameSpace": "DataLine.ProtoOne",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "aCreate",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "aRead",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "aUpdate",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "aDelete",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "group_id",
+      "relatedTo": "data-line-proto-one-grp",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "customerId",
+      "relatedTo": "data-line-proto-one-customer",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "customer_aclE",
+      "modelName": "data-line-proto-one-customer-acl",
+      "attrs": [
+        {
+          "name": "aCreate",
+          "caption": "A_create",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "aRead",
+          "caption": "A_read",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "aUpdate",
+          "caption": "A_update",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "aDelete",
+          "caption": "A_delete",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "group_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "default",
+          "caption": "Group_id",
+          "name": "group_id",
+          "relatedTo": "data-line-proto-one-grp",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "CustomerId",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "default",
+          "caption": "Customer_id",
+          "name": "customerId",
+          "relatedTo": "data-line-proto-one-customer",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "customer_aclL",
+      "modelName": "data-line-proto-one-customer-acl",
+      "attrs": [
+        {
+          "name": "aCreate",
+          "caption": "A_create",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "aRead",
+          "caption": "A_read",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "aUpdate",
+          "caption": "A_update",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "aDelete",
+          "caption": "A_delete",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "group_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "group_id",
+          "relatedTo": "data-line-proto-one-grp",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "CustomerId",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "customerId",
+          "relatedTo": "data-line-proto-one-customer",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

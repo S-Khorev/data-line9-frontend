@@ -1,0 +1,393 @@
+﻿{
+  "name": "DataLineProtoOneService",
+  "modelName": "data-line-proto-one-service",
+  "className": "service",
+  "nameSpace": "DataLine.ProtoOne",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "varcharmax",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dtCreated",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dtStarted",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dtEnded",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "parent_id",
+      "relatedTo": "data-line-proto-one-service",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "cfs_id",
+      "relatedTo": "data-line-proto-one-service",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "service_spec_id",
+      "relatedTo": "data-line-proto-one-service-spec",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "state",
+      "relatedTo": "data-line-proto-one-service-state",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "contragentId",
+      "relatedTo": "data-line-proto-one-contragent",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "customerId",
+      "relatedTo": "data-line-proto-one-customer",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "serviceE",
+      "modelName": "data-line-proto-one-service",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "dtCreated",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dtStarted",
+          "caption": "Dt_started",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "dtEnded",
+          "caption": "Dt_ended",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ContragentId",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": false,
+              "index": 16
+            }
+          ],
+          "index": 5,
+          "type": "default",
+          "caption": "Contragent_id",
+          "name": "contragentId",
+          "relatedTo": "data-line-proto-one-contragent",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "cfs_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "default",
+          "caption": "Cfs_id",
+          "name": "cfs_id",
+          "relatedTo": "data-line-proto-one-service",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "service_spec_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "enum",
+              "caption": "Enum",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "default",
+          "caption": "Service_spec_id",
+          "name": "service_spec_id",
+          "relatedTo": "data-line-proto-one-service-spec",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "state",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "description",
+              "caption": "Description",
+              "hidden": false,
+              "index": 11
+            }
+          ],
+          "index": 10,
+          "type": "default",
+          "caption": "State",
+          "name": "state",
+          "relatedTo": "data-line-proto-one-service-state",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "parent_id",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 13
+            }
+          ],
+          "index": 12,
+          "type": "default",
+          "caption": "Parent_id",
+          "name": "parent_id",
+          "relatedTo": "data-line-proto-one-service",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "CustomerId",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "",
+              "hidden": false,
+              "index": 15
+            }
+          ],
+          "index": 14,
+          "type": "default",
+          "caption": "Customer_id",
+          "name": "customerId",
+          "relatedTo": "data-line-proto-one-customer",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "serviceL",
+      "modelName": "data-line-proto-one-service",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "dtCreated",
+          "caption": "Dt_created",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dtStarted",
+          "caption": "Dt_started",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "dtEnded",
+          "caption": "Dt_ended",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ContragentId",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 5,
+          "type": "default",
+          "caption": "Contragent",
+          "name": "contragentId",
+          "relatedTo": "data-line-proto-one-contragent",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "cfs_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 6,
+          "type": "default",
+          "caption": "Name",
+          "name": "cfs_id",
+          "relatedTo": "data-line-proto-one-service",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "service_spec_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 7,
+          "type": "default",
+          "caption": "Enum",
+          "name": "service_spec_id",
+          "relatedTo": "data-line-proto-one-service-spec",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "state",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 8,
+          "type": "default",
+          "caption": "Description",
+          "name": "state",
+          "relatedTo": "data-line-proto-one-service-state",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "parent_id",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 9,
+          "type": "default",
+          "caption": "Name",
+          "name": "parent_id",
+          "relatedTo": "data-line-proto-one-service",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "CustomerId",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [],
+          "index": 10,
+          "type": "default",
+          "caption": "Customer",
+          "name": "customerId",
+          "relatedTo": "data-line-proto-one-customer",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

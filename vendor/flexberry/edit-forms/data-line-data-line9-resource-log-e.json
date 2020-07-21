@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Resource_log",
+  "name": "DataLineDataLine9resource_logE",
+  "className": "resource_logE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-resource-log",
+      "modelProjection": "resource_logE"
+    }
+  ]
+}

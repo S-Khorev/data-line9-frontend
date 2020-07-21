@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Customer",
+  "name": "DataLineDataLine9customerE",
+  "className": "customerE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-customer",
+      "modelProjection": "customerE"
+    }
+  ]
+}

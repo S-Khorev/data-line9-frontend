@@ -1,0 +1,253 @@
+<h3 class="ui header">{{t "forms.data-line-data-line9-usr-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.login
+      class=(if (v-get validationObject "login" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.login-caption")
+      data-test-data-line-data-line9-usr-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "login" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.password
+      class=(if (v-get validationObject "password" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.password-caption")
+      data-test-data-line-data-line9-usr-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "password" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-usr-e.locked-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.locked
+      data-test-data-line-data-line9-usr-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "locked" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.email
+      class=(if (v-get validationObject "email" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.email-caption")
+      data-test-data-line-data-line9-usr-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "email" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.domain
+      class=(if (v-get validationObject "domain" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.domain-caption")
+      data-test-data-line-data-line9-usr-e-------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "domain" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.lastName
+      class=(if (v-get validationObject "lastName" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.lastName-caption")
+      data-test-data-line-data-line9-usr-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "lastName" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.firstName
+      class=(if (v-get validationObject "firstName" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.firstName-caption")
+      data-test-data-line-data-line9-usr-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "firstName" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.middleName
+      class=(if (v-get validationObject "middleName" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.middleName-caption")
+      data-test-data-line-data-line9-usr-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "middleName" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.phone
+      class=(if (v-get validationObject "phone" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.phone-caption")
+      data-test-data-line-data-line9-usr-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "phone" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.phoneWork
+      class=(if (v-get validationObject "phoneWork" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.phoneWork-caption")
+      data-test-data-line-data-line9-usr-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "phoneWork" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.phoneMobile
+      class=(if (v-get validationObject "phoneMobile" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.phoneMobile-caption")
+      data-test-data-line-data-line9-usr-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "phoneMobile" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.position
+      class=(if (v-get validationObject "position" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.position-caption")
+      data-test-data-line-data-line9-usr-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "position" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.department
+      class=(if (v-get validationObject "department" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.department-caption")
+      data-test-data-line-data-line9-usr-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "department" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.photo
+      class=(if (v-get validationObject "photo" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.photo-caption")
+      data-test-data-line-data-line9-usr-e------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "photo" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.thumbnail
+      class=(if (v-get validationObject "thumbnail" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.thumbnail-caption")
+      data-test-data-line-data-line9-usr-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "thumbnail" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-usr-e.dtCreated-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dtCreated
+      class=(if (v-get validationObject "dtCreated" "isInvalid") "error")
+      data-test-data-line-data-line9-usr-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dtCreated" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-usr-e.dtLocked-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dtLocked
+      class=(if (v-get validationObject "dtLocked" "isInvalid") "error")
+      data-test-data-line-data-line9-usr-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dtLocked" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-usr-e.dtModified-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dtModified
+      class=(if (v-get validationObject "dtModified" "isInvalid") "error")
+      data-test-data-line-data-line9-usr-e-----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dtModified" "messages")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.data-line-data-line9-usr-e.dtLastLogin-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.dtLastLogin
+      class=(if (v-get validationObject "dtLastLogin" "isInvalid") "error")
+      data-test-data-line-data-line9-usr-e------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dtLastLogin" "messages")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.fullName
+      class=(if (v-get validationObject "fullName" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.fullName-caption")
+      data-test-data-line-data-line9-usr-e---------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "fullName" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.shortName
+      class=(if (v-get validationObject "shortName" "isInvalid") "error")
+      label=(t "forms.data-line-data-line9-usr-e.shortName-caption")
+      data-test-data-line-data-line9-usr-e----------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "shortName" "messages")}}
+  </div>
+</form>

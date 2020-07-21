@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Dictionary",
+  "name": "DataLineDataLine9dictionaryE",
+  "className": "dictionaryE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-dictionary",
+      "modelProjection": "dictionaryE"
+    }
+  ]
+}

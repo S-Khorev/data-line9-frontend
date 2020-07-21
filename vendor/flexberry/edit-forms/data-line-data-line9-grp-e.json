@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Grp",
+  "name": "DataLineDataLine9grpE",
+  "className": "grpE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "data-line-proto-one-grp",
+      "modelProjection": "grpE"
+    }
+  ]
+}
