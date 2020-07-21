@@ -1,4 +1,0 @@
-import DataLineDataLine9service_characteristic_logEController from '../data-line-data-line9-service-characteristic-log-e';
-
-var DataLineDataLine9service_characteristic_logENewController = DataLineDataLine9service_characteristic_logEController;
-export default DataLineDataLine9service_characteristic_logENewController;

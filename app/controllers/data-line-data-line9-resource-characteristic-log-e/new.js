@@ -1,4 +1,0 @@
-import DataLineDataLine9resource_characteristic_logEController from '../data-line-data-line9-resource-characteristic-log-e';
-
-var DataLineDataLine9resource_characteristic_logENewController = DataLineDataLine9resource_characteristic_logEController;
-export default DataLineDataLine9resource_characteristic_logENewController;

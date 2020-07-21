@@ -1,4 +1,0 @@
-import DataLineDataLine9characteristic_typeEController from '../data-line-data-line9-characteristic-type-e';
-
-var DataLineDataLine9characteristic_typeENewController = DataLineDataLine9characteristic_typeEController;
-export default DataLineDataLine9characteristic_typeENewController;
